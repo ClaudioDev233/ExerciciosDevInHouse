@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="imc.js" defer></script>
+    <style>
+        input[type=number] {
+            -moz-appearance: textfield;
+            margin: 5px;
+        }
+        
+        #main-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container{
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            margin: auto 0;
+        }
+
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <section id="main-container">
+        <section id="container">
+            <form action="">
+                <div><p>Peso</p>
+                <input type="number" id="peso" autocomplete="off">
+                </div>
+                <div>
+                <p>Altura</p>
+                <input type="number" id="altura">
+                </div>
+                    <div><input type="button" id="btn" value="Calcular" onclick="imc()"></div>
+            </form>
+            <div id="seuIMC"></div>
+            <div id="resultado"></div>
+         </section>
+    </section>
+</body>
+</html>
