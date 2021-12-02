@@ -14,3 +14,4 @@ const nomeCompleto = ((nome,sobrenome) =>{
     return `Olá meu nome é:${nome} ${sobrenome}`
 });
 console.log(nomeCompleto('','Junior'))
+

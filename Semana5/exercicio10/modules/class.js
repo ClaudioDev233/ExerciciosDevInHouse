@@ -7,4 +7,5 @@ class Produto {
         
     }
 }
- export default Produto
+
+export default Produto
