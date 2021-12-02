@@ -33,4 +33,4 @@ const usuario ={
 
 const falaMoca = ({nome, sobrenome, interesses: [interesse], familia: {mae}}) =>{ 
     return `Olá, meu nome é ${nome} ${sobrenome} e meu principal hobbie é ${interesse}. O nome da minha mãe é ${mae}`
-}
+}   
