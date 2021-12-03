@@ -2,7 +2,8 @@
 function criarProduto2(produto){
     const $div = document.getElementById('main-container')
     const $divProdutos = document.createElement('div')
-    $divProdutos.innerHTML = `<h1>${produto.nome}</h1>`
+    $divProdutos.className = 'produto'
+    $divProdutos.innerHTML = `<h2>${produto.nome}</h2>`
 
     const $imagem = document.createElement('img')
     $imagem.setAttribute("style","width=200px;height:200px")
@@ -25,7 +26,7 @@ function criarProduto2(produto){
           option = `<option>A vista por: R$ ${produto.valor}</option>`
            $select.innerHTML += option
         } else {
-            option = `<option> Ou em até ${index+1}x de R$ ${((parseFloat(produto.valor))/(index+1)).toFixed(2)}</option>`
+            option = `<option> Ou em ${index+1}x de R$ ${((parseFloat(produto.valor))/(index+1)).toFixed(2)}</option>`
             $select.innerHTML += option
         }
        

@@ -5,15 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            margin: auto;
+            
+        }
+        .form{
+            margin: 0 auto;
+            width: 150px;
+            height:180px;
+            text-align: center;
+
+        }
+        input{
+            margin: 5px;
+        }
+    </style>
 </head>
-<body>
-    <form action="">
-        <input type="number" id='nota1' autocomplete='off'>
-        <input type="number" id='nota2' autocomplete='off'>
-        <input type="number"  id="nota3" autocomplete='off'>
-        <input type="button" value="Enviar Notas" id="submit"> 
-    </form>
-    <p>A média do aluno é de <span id="span"></span></p>
+<body> <div id="container">
+        <div class="form">
+            <form action="">
+                <input type="number" id='nota1' autocomplete='off'>
+                <input type="number" id='nota2' autocomplete='off'>
+                <input type="number"  id="nota3" autocomplete='off'>
+                <input type="button" value="Enviar Notas" id="submit"> 
+            </form>
+            <p>A média do aluno é: <span id="span"></span></p>
+        </div>
+    </div>
     <script src="ex5.js" type="module"></script>
 </body>
 </html>
