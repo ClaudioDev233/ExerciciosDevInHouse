@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .container-main{
+            width: 400px;
+            height: 700px;
+            border: 1px solid pink;
+            display:flex;
+            justify-content: center;
+            justify-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container{
+            margin: 0 auto;
+            width: 300px;
+            height: 600px;
+            border: 3px solid black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .drop-zone{
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            margin: 0 auto;
+        }
+        .drop-zone-dropped{
+            border: 3px dotted red
+        }
+        .tes{
+        margin: 0 auto;
+        width: 200px; 
+        height:200px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid black;
+         
+        }
+        .aqui{
+        margin: 0 auto;
+        width: 200px; 
+        height:200px;
+        border-radius: 50%;
+        border: 3px solid black;
+        background: url(../Ex8/Do8ytAs.png);
+        background-position: center; 
+        }
+        label{
+            text-align: center;
+            padding: 10px;
+        }
+
+        input[type=file]{
+            display:none;
+        }
+        input[type=button]{
+            float:right;
+            margin: 10px;
+        }
+        #coiso{
+            width: auto;
+            height: 70px;
+            background-color: aquamarine;
+            border-radius: 50px 0 0 50px;
+            margin: 0 0 0px 30px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+            
+            <div class="aqui">
+
+            </div>
+            <label for=""> Nome
+            <input id="nome "type="text"></input>
+            </label>
+            <label for=""> Sobre você
+            <textarea name="" id=""></textarea>
+            </label>
+            <div class="drop-zone" ondrop="dropHandler(event)" ondragover="dragOver(event)" ondragend="dragEnd()" ondragleave="dragLeave()" >
+            <input id='input' type="file">
+            Click or Drag an Image
+        </input>
+            </div>
+            </label>
+            
+    </div>  
+    <div class="container-main">
+         <div class="container">
+            <div>
+                <input type="button" value="X">
+            </div>
+            <div class="aqui">
+
+            </div>
+            <h3>Nome</h3>
+            <h4>@ClaudioDev</h4>
+            <div>Olá, eu me chamo Claudio e é isso ai</div>
+            <div id='coiso'>Coisas aqui</div> 
+            
+            
+        </div>  
+    </div>
+    <script src="ex8.js"></script>  
+</body>
+</html>

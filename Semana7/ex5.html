@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 5px;
+            width: 500px;
+            background-color:#ccc;
+            position: relative;
+            border-radius: 8px;
+        }
+        .bar{
+            position: absolute;
+            height: 100%;
+            background-color: rgb(173, 29, 199);
+            border-radius: 8px;
+            
+        }
+        #play-animation{
+            animation: bar-animation 20s forwards;
+        }
+        @keyframes bar-animation{
+           0% { width:0%;} 
+           100% {width: 100%;}
+        }
+
+    </style>
+</head>
+<body onload="coiso()">
+    <div class="container">
+        <div class="bar"></div>
+    </div>
+    
+<script defer src="ex5.js"></script>
+</body>
+</html>

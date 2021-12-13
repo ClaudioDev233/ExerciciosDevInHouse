@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container-mega{
+    /* margin: 0 auto; */
+    width:fit-content;
+    height:fit-content;
+    }
+    .wrapper {
+    display: grid;
+    grid-template-columns: 300px 600px;
+    grid-template-rows: 600px;
+    border: 1px solid aqua
+    }  
+    .wrapper-options{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 400px 50px;
+        margin: auto;
+    }
+    
+    .container-main{
+        display:flex;
+        flex-direction: column;
+        width: 90%;
+        height: 95%;
+        margin:auto;
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding:10px;
+    }
+    button{
+        align-self: end;
+        width: fit-content;
+        
+    }
+    .user-image{
+        margin: 0 auto;
+        width: 200px; 
+        height:200px;
+        border-radius: 50%;
+        border: 3px solid black;
+        background: url(../Ex8/Do8ytAs.png);
+        background-position: center; 
+        }
+    .user-name{
+        margin: 10px
+    }
+    .user-description{
+        margin: 10px;
+        max-width: 200px;
+        max-height: 100px;
+    }
+    .user-languages{
+        display:flex;
+        margin: 40px 0 0px 30px;
+        width:90%;
+        height: 70px;
+        background: firebrick;
+        border-radius: 50px 0 0 50px;
+        padding: 5px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .user-languages img{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+    .image-preview{
+        margin: 0 auto;
+        width: 150px; 
+        height:150px;
+        border-radius: 50%;
+        border: 3px solid black;
+        background: url(../Ex8/Do8ytAs.png);
+        background-position: center; 
+        }
+
+    .drop-zone{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 30px auto;
+        }    
+       
+    </style>
+</head>
+<body>
+  <div class="container-mega">  
+  <div class="wrapper">
+   <div class="container-main">
+       <button><img src="https://img.icons8.com/stickers/40/000000/gear.png"/></button>    
+       <div class="container">
+           <div class="user-image"></div>
+           <div class="user-name"> Claudin </div>
+           <div class="user-description"> olá, me chamo Claudio e sou Programador Front-End</div>
+           <div class="user-languages"></div> 
+           
+       </div>
+   </div>
+   <div>
+    <div class="container-main">
+        <h1>Opçoes</h1>
+        <div class="wrapper-options">
+            <div>1
+                <input type="text" placeholder="username">
+                <textarea placeholder="description">
+                </textarea>
+                <div class="inputs">
+                    <label for="check1">
+                    <input class="js" type="checkbox" name="" id="check1" onchange="JsCheck()" autocomplete="off"> Js
+                    </label>
+                    <label for="check2">
+                    <input class="css" type="checkbox" name="" id="check2" onclick="CssCheck()"> Css
+                    </label>
+                    <label for="check3">
+                    <input class ="html" type="checkbox" name="" id="check3" onclick="HtmlCheck()"> Html
+                    </label>
+                    <label for="check4">
+                    <input class="react" type="checkbox" name="" id="check4" onclick="ReactCheck()"> React
+                    </label>
+                </div>
+                
+                
+            </div>
+            <div> Image Preview
+                <div class="image-preview"></div>
+                <div class="drop-zone" ondrop="dropHandler(event)" ondragover="dragOver(event)">
+                    <input class="input" type="file" name="" id="">
+                </div>
+
+            </div>
+            <div class="submit"><input type="button" value="botão"></div>
+        </div>
+    </div>
+   </div>
+</div>
+</div>
+<script src="ex8.js"></script>
+</body>
+</html>
